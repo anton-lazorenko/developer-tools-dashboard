@@ -1,0 +1,1 @@
+export { RandomColorGenerator } from './RandomColorGenerator'

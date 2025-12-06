@@ -1,0 +1,41 @@
+ .wrapper {
+  min-width: 500px;
+  padding: 24px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  justify-content: space-between;  
+}
+
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 22px;
+}
+
+.buttonsGroup {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.userName {
+  color: rgb(153, 255, 0);
+  font-size: 24px;
+}

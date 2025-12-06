@@ -1,0 +1,24 @@
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: rgba(51, 32, 132, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(1px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.mainElements {
+  margin: 0 auto;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 32px; 
+}
