@@ -1,8 +1,6 @@
 import styles from './sidebar.module.scss';
 import { NavLink } from "react-router-dom";
 
-
-
 export function Sidebar() {
   return (
     <aside className={styles.sidebar}>

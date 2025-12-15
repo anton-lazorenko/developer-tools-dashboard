@@ -1,8 +1,9 @@
 .generatorsContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 32px; 
-  max-width: 1600px;  
+  gap: 32px;
+  justify-content: start;
+  width: 100%;
 }
 
 .item {
@@ -11,8 +12,4 @@
   background: black;
   color: white;
   border-radius: 12px;
-}
-  
-.address {
-  grid-column: 2 / 4;
 }

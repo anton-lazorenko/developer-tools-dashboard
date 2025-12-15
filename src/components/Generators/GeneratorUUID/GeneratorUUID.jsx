@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./generatorUUID.module.scss";
 import Button from '../../Button';
+import Card from '../../Card';
 import copyIcon from '../../../assets/icons/copy-icon.svg';
 
 function generateUUID() {
@@ -17,17 +18,17 @@ export function GeneratorUUID() {
   const handleGenerate = () => setUuid(generateUUID());
 
   return (
-    <div className={styles.generatorUUID}>
+    <Card>
       <h2>UUID Generator</h2>
       <p className={styles.uuid}>{uuid}</p>
       <div className={styles.buttonsGroup}>
         <Button onClick={handleGenerate}>
-          Generate
+          Generate UUID
         </Button>
-        <Button className={styles.copyBtn} onClick={() => navigator.clipboard.writeText(uuid)}>
+        <Button className={styles.iconButton} onClick={() => navigator.clipboard.writeText(uuid)}>
           <img src={copyIcon} width={20} height={20} fill='white' alt="copy" />
         </Button>
       </div>
-    </div>
+    </Card>
   );
 }

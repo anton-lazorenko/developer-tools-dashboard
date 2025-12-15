@@ -1,8 +1,9 @@
-import styles from './randomColorGenerator.module.scss'
+import styles from './randomColorGenerator.module.scss';
 import copyIcon from '../../../assets/icons/copy-icon.svg';
 
 import { useState } from 'react';
-import Button from '../../Button'
+import Button from '../../Button';
+import Card from '../../Card';
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -14,7 +15,7 @@ function getRandomColor() {
 }
 
 export function RandomColorGenerator() {
-  const [colors, setColors] = useState([]); 
+  const [colors, setColors] = useState([]);
 
 
   const generatePalette = () => {
@@ -23,7 +24,7 @@ export function RandomColorGenerator() {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <Card>
       <h2>Random Color Generator</h2>
       <Button onClick={generatePalette}>
         Generate Palette
@@ -35,16 +36,16 @@ export function RandomColorGenerator() {
               style={{ "--bg": color }} />
             <p style={{ marginTop: '5px', fontSize: '12px' }}>{color}</p>
             <Button
-              className={styles.copyBtn}
+              className={styles.iconButton}
               onClick={() => {
-                navigator.clipboard.writeText(color)
+                navigator.clipboard.writeText(color);
               }}>
               <img src={copyIcon} width={20} height={20} fill='white' alt="copy" />
             </Button>
           </div>
-        ))} 
+        ))}
       </div>
-    </div>
+    </Card>
   );
 };
 

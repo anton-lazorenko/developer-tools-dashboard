@@ -1,16 +1,16 @@
-.sidebar {
-  max-width: 165px;
+.wrapper {
+  max-width: 600px;
   padding: 24px;
-  background: rgba(10, 10, 10, 0.8);
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(1px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 24px;
-}
-
-.list {
+  transition: all 0.2s ease;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
 }

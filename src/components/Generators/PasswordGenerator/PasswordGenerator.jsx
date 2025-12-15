@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from './passwordGenerator.module.scss';
 import Button from '../../Button/Button';
+import Card from '../../Card';
 import Checkbox from '../../Checkbox/Checkbox';
 import copyIcon from '../../../assets/icons/copy-icon.svg';
 
@@ -30,7 +31,7 @@ export function PasswordGenerator() {
   };
 
   return (
-    <div className={styles.passwordGenerator}>
+    <Card>
       <h2>Password Generator</h2>
       <label className={styles.label}>
         Length:
@@ -66,13 +67,14 @@ export function PasswordGenerator() {
           Symbols
         </label>
       </div>
-      <input className={styles.input} type="text" readOnly value={password} /> 
+      <input className={styles.input} type="text" readOnly value={password} />
       <div className={styles.buttonsGroup}>
         <Button onClick={generatePassword}>Generate</Button>
-        <Button onClick={() => navigator.clipboard.writeText(password)}>
+        <Button className={styles.iconButton} onClick={() => navigator.clipboard.writeText(password)}>
           <img src={copyIcon} width={20} height={20} fill='white' alt="copy" />
         </Button>
       </div>
-    </div>
+
+    </Card>
   );
 };
