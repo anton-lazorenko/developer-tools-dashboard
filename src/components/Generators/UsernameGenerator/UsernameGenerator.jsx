@@ -41,7 +41,7 @@ export function UsernameGenerator() {
           onChange={() => setNoNumbers(!noNumbers)} />
         Numbers
       </label>
-      <input className={styles.input} type="text" readOnly value={username} />
+      <input type="text" readOnly value={username} />
 
       <div className={styles.buttonsGroup}>
         <Button onClick={generate}>Generate Username</Button>

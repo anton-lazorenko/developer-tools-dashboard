@@ -1,11 +1,7 @@
 .sidebar {
   max-width: 165px;
   padding: 24px;
-  background: rgba(10, 10, 10, 0.8);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(1px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background: var(--sidebar-bg);
   border-radius: 24px;
 }
 
@@ -13,4 +9,27 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+
+.default {
+  color: #8f8f8f;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.default:hover {
+  color: #c1c0c0;
+  transform: scale(1.05);
+  font-weight: 600;
+}
+
+.active {
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.active:hover {
+  color: #ffffff;
 }

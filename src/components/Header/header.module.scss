@@ -2,10 +2,10 @@
   display: flex;
   gap: 24px;
   align-items: center;
+  padding: 8px 0;
 }
 
 .title {
-  padding: 32px;
   border-radius: 24px;
   flex: 1;
   color: var(--title-color);

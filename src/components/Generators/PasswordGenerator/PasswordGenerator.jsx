@@ -67,7 +67,7 @@ export function PasswordGenerator() {
           Symbols
         </label>
       </div>
-      <input className={styles.input} type="text" readOnly value={password} />
+      <input type="text" readOnly value={password} />
       <div className={styles.buttonsGroup}>
         <Button onClick={generatePassword}>Generate</Button>
         <Button className={styles.iconButton} onClick={() => navigator.clipboard.writeText(password)}>

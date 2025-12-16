@@ -1,0 +1,7 @@
+.encodersContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  justify-content: start;
+  width: 100%;
+}

@@ -1,17 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
-import Layout from "./Layout/Layout";       // импорт Layout 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./Layout/Layout";
 
-import { GeneratorsPage } from './pages/GeneratorsPage'
+import { GeneratorsPage } from './pages/GeneratorsPage';
+import { EncodersPage } from './pages/EncodersPage';
+import { ConvertersPage } from "./pages/ConvertersPage";
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Общий Layout с Header/Sidebar */}
         <Route path="/" element={<Layout />}>
-          {/* Вложенные страницы рендерятся через Outlet */}
-          <Route index element={<GeneratorsPage />} /> 
-          {/* Добавляй остальные категории */}
+          <Route path="generators" element={<GeneratorsPage />} />
+          <Route path="encoders" element={<EncodersPage />} />
+          <Route path="converters" element={<ConvertersPage />} />
         </Route>
       </Routes>
     </Router>

@@ -25,7 +25,7 @@ export function FakeAddressGenerator() {
   return (
     <Card className={styles.cardContainer}>
       <h2>Fake Address Generator</h2>
-      <input className={styles.input} type="text" readOnly value={address} />
+      <input type="text" readOnly value={address} />
       <div className={styles.buttonsGroup}>
         <Button onClick={generate}>Generate Address</Button>
         <Button className={styles.iconButton} onClick={() => navigator.clipboard.writeText(address)}>
