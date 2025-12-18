@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./fakeAddressGenerator.module.scss";
-import Button from '../../Button';
-import Card from '../../Card';
+import { Button } from '../../Button/Button';
+import { Card } from '../../Card/Card';
 import copyIcon from '../../../assets/icons/copy-icon.svg';
 
 const streets = ["Maple St.", "Oak Ave.", "Pine Rd.", "Cedar Blvd.", "Elm St.", "Birch Ln."];
@@ -9,7 +9,7 @@ const cities = ["Springfield", "Rivertown", "Lakeside", "Hillview", "Greenville"
 const states = ["NY", "CA", "TX", "FL", "IL", "WA"];
 const zipCodes = ["10001", "90210", "73301", "33101", "60601", "98001"];
 
-export function FakeAddressGenerator() {
+export const FakeAddressGenerator = () => {
   const [address, setAddress] = useState("");
 
   const generate = () => {
@@ -34,4 +34,4 @@ export function FakeAddressGenerator() {
       </div>
     </Card>
   );
-}
+};

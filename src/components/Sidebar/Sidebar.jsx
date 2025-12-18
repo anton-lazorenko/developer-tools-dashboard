@@ -1,8 +1,8 @@
 import styles from './sidebar.module.scss';
 import { NavLink } from "react-router-dom";
-import Dropdown from '../Dropdown/Dropdown';
+import { Dropdown } from '../Dropdown/Dropdown';
 
-export function Sidebar() {
+export const Sidebar = () => {
   return (
     <aside className={styles.sidebar}>
       <nav>
@@ -11,7 +11,7 @@ export function Sidebar() {
             <li><NavLink to='/generators' className={({ isActive }) => isActive ? styles.active : styles.default}>Generators</NavLink></li>
           </Dropdown>
           <Dropdown title='Encoders'>
-            <li><NavLink to='/encoders' className={({ isActive }) => isActive ? styles.active : styles.default}>Encoders/Decoders</NavLink></li>
+            <li><NavLink to='/encoders' className={({ isActive }) => isActive ? styles.active : styles.default}>Encoders</NavLink></li>
           </Dropdown>
           <Dropdown title='Converters'>
             <li><NavLink to='/converters' className={({ isActive }) => isActive ? styles.active : styles.default}>Converters</NavLink></li>
@@ -20,5 +20,5 @@ export function Sidebar() {
       </nav>
     </aside>
   );
-}
+};
 

@@ -1,4 +1,4 @@
-export function ConvertersPage() {
+const ConvertersPage = () => {
   return (
     <div>
       <h1>Converters</h1>
@@ -6,4 +6,6 @@ export function ConvertersPage() {
 
     </div>
   );
-}
+};
+
+export default ConvertersPage;

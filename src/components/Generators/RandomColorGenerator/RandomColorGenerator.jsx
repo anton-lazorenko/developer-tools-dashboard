@@ -2,8 +2,8 @@ import styles from './randomColorGenerator.module.scss';
 import copyIcon from '../../../assets/icons/copy-icon.svg';
 
 import { useState } from 'react';
-import Button from '../../Button';
-import Card from '../../Card';
+import { Button } from '../../Button/Button';
+import { Card } from '../../Card/Card';
 
 function getRandomColor() {
   const letters = '0123456789ABCDEF';
@@ -14,7 +14,7 @@ function getRandomColor() {
   return color;
 }
 
-export function RandomColorGenerator() {
+export const RandomColorGenerator = () => {
   const [colors, setColors] = useState([]);
 
 

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./generatorUUID.module.scss";
-import Button from '../../Button';
-import Card from '../../Card';
+import { Button } from '../../Button/Button';
+import { Card } from '../../Card/Card';
 import copyIcon from '../../../assets/icons/copy-icon.svg';
 
 function generateUUID() {
@@ -12,7 +12,7 @@ function generateUUID() {
   });
 }
 
-export function GeneratorUUID() {
+export const GeneratorUUID = () => {
   const [uuid, setUuid] = useState(generateUUID());
 
   const handleGenerate = () => setUuid(generateUUID());
@@ -31,4 +31,4 @@ export function GeneratorUUID() {
       </div>
     </Card>
   );
-}
+};

@@ -1,9 +1,9 @@
 import { useState } from "react";
 import styles from "./UsernameGenerator.module.scss";
-import Button from "../../Button";
-import Card from '../../Card';
+import { Button } from "../../Button/Button";
+import { Card } from '../../Card/Card';
 import copyIcon from "../../../assets/icons/copy-icon.svg";
-import Checkbox from '../../Checkbox/Checkbox';
+import { Checkbox } from '../../Checkbox/Checkbox';
 
 const adjectives = [
   "Swift", "Silent", "Electric", "Neon", "Cosmic", "Shadow", "Funky", "Lucky", "Rapid", "Pixel",
@@ -17,7 +17,7 @@ const nouns = [
   "Hawk", "Pirate", "Rhino", "Panda", "Robot", "Shark", "Sniper", "Rebel", "Dev", "Beast"
 ];
 
-export function UsernameGenerator() {
+export const UsernameGenerator = () => {
   const [username, setUsername] = useState("");
   const [noNumbers, setNoNumbers] = useState(false);
 
@@ -53,5 +53,5 @@ export function UsernameGenerator() {
       </div>
     </Card>
   );
-}
+};
 

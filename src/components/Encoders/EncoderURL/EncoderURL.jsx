@@ -3,10 +3,10 @@ import styles from './encoderURL.module.scss';
 import { useState } from "react";
 import { encodeURL, decodeURL } from "./url.utils";
 
-import Card from '../../Card';
-import Button from '../../Button';
+import { Card } from '../../Card/Card';
+import { Button } from '../../Button/Button';
 
-export default function EncoderURL() {
+export const EncoderURL = () => {
   const [input, setInput] = useState("");
   const [mode, setMode] = useState("encode");
 
@@ -39,4 +39,4 @@ export default function EncoderURL() {
       />
     </Card>
   );
-}
+};

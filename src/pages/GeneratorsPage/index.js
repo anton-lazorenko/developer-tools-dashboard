@@ -1,1 +1,0 @@
-export { GeneratorsPage } from './GeneratorsPage';

@@ -2,10 +2,10 @@ import styles from './base64.module.scss';
 
 import { useState } from "react";
 import { encodeBase64, decodeBase64 } from "../Base64/base64.utils";
-import Button from '../../Button';
-import Card from '../../Card';
+import { Button } from '../../Button/Button';
+import { Card } from '../../Card/Card';
 
-export default function Base64() {
+export const Base64 = () => {
   const [input, setInput] = useState("");
   const [mode, setMode] = useState("encode"); // encode или decode
 
@@ -42,4 +42,4 @@ export default function Base64() {
       />
     </Card>
   );
-}
+};

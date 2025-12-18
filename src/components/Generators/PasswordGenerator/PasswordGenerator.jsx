@@ -1,11 +1,11 @@
 import { useState } from "react";
 import styles from './passwordGenerator.module.scss';
-import Button from '../../Button/Button';
-import Card from '../../Card';
-import Checkbox from '../../Checkbox/Checkbox';
+import { Button } from '../../Button/Button';
+import { Card } from '../../Card/Card';
+import { Checkbox } from '../../Checkbox/Checkbox';
 import copyIcon from '../../../assets/icons/copy-icon.svg';
 
-export function PasswordGenerator() {
+export const PasswordGenerator = () => {
   const [length, setLength] = useState(12);
   const [includeUpper, setIncludeUpper] = useState(true);
   const [includeNumbers, setIncludeNumbers] = useState(true);

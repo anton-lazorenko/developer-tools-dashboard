@@ -1,11 +1,11 @@
 import styles from './generatorsPage.module.scss';
-import { GeneratorUUID } from '../../components/Generators/GeneratorUUID';
-import { PasswordGenerator } from '../../components/Generators/PasswordGenerator';
-import { RandomColorGenerator } from '../../components/Generators/RandomColorGenerator';
-import { UsernameGenerator } from '../../components/Generators/UsernameGenerator';
-import { FakeAddressGenerator } from '../../components/Generators/FakeAddressGenerator';
+import { GeneratorUUID } from '../../components/Generators/GeneratorUUID/GeneratorUUID';
+import { PasswordGenerator } from '../../components/Generators/PasswordGenerator/PasswordGenerator';
+import { RandomColorGenerator } from '../../components/Generators/RandomColorGenerator/RandomColorGenerator';
+import { UsernameGenerator } from '../../components/Generators/UsernameGenerator/UsernameGenerator';
+import { FakeAddressGenerator } from '../../components/Generators/FakeAddressGenerator/FakeAddressGenerator';
 
-export function GeneratorsPage() {
+const GeneratorsPage = () => {
   return (
     <div className={styles.generatorsContainer}>
       <GeneratorUUID />
@@ -15,4 +15,6 @@ export function GeneratorsPage() {
       <FakeAddressGenerator />
     </div>
   );
-}
+};
+
+export default GeneratorsPage;

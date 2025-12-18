@@ -2,10 +2,10 @@ import styles from './encoderHTML.module.scss';
 
 import { useState } from "react";
 import { encodeHTML, decodeHTML } from "./html.utils";
-import Card from '../../Card';
-import Button from '../../Button';
+import { Card } from '../../Card/Card';
+import { Button } from '../../Button/Button';
 
-export default function EncoderHTML() {
+export const EncoderHTML = () => {
   const [input, setInput] = useState("");
   const [mode, setMode] = useState("encode");
 
@@ -38,4 +38,4 @@ export default function EncoderHTML() {
       />
     </Card>
   );
-}
+};
