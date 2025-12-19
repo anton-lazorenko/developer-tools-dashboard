@@ -1,8 +1,9 @@
 import styles from './dropdown.module.scss';
 
 import { useState } from "react";
-import dropDownArrow from '../../assets/icons/dropDownArrow.svg';
+// import dropDownArrow from '../../assets/icons/dropDownArrow.svg';
 import { Button } from '../Button/Button';
+import DropDownArrow from '../../assets/icons/dropDownArrow.svg?react';
 
 export const Dropdown = ({ title, children, defaultOpen = false }) => {
   const [open, setOpen] = useState(defaultOpen);
@@ -15,7 +16,7 @@ export const Dropdown = ({ title, children, defaultOpen = false }) => {
       >
         {title}
         <span className={`${styles.arrow} ${open ? styles.open : ""}`}>
-          <img src={dropDownArrow} width={20} height={20} fill='white' alt="copy" />
+          <DropDownArrow className={styles.icon} />
         </span>
       </Button>
       {open && (

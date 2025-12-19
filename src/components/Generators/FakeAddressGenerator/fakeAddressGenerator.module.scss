@@ -1,15 +1,10 @@
-.cardContainer {
-  max-width: 100%;
-  grid-column: 2 / -1;
-}
+ .buttonsGroup {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   gap: 24px;
+ }
 
-.buttonsGroup {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  gap: 24px;
-}
-
-.iconButton {
-  max-width: 120px;
-}
+ .iconButton {
+   max-width: 120px;
+ }

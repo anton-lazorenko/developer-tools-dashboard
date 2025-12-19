@@ -3,6 +3,7 @@
   padding: 24px;
   background: var(--sidebar-bg);
   border-radius: 24px;
+  border: 2px solid var(--border-color);
 }
 
 .list {
@@ -13,23 +14,24 @@
 
 
 .default {
-  color: #8f8f8f;
+  color: var(--text-color);
   display: inline-block;
   font-weight: 300;
 }
 
 .default:hover {
-  color: #c1c0c0;
+  color: var(--text-color);
   transform: scale(1.05);
-  font-weight: 600;
+  font-weight: 900;
 }
 
 .active {
-  color: #ffffff;
+  color: var(--text-color);
   display: inline-block;
-  font-weight: 600;
+  font-weight: 900;
+  transform: scale(1.05);
 }
 
 .active:hover {
-  color: #ffffff;
+  color: var(--text-color);
 }

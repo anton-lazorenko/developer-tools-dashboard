@@ -38,35 +38,37 @@ body {
 }
 
 body.light-mode {
-  --bg-color: #e5e7e9;
-  --main-bg: #FFFFFF;
-  --cards-bg: #e5e7e9;
-  --sidebar-bg: #1C1917;
+  --bg-color: #f5f5f5;
+  --main-bg: #ece2f3;
+  --cards-bg: #f5f5f5;
+  --sidebar-bg: #f5f5f5;
 
-  --text-color: #292524;
-  --title-color: #1C1917;
+  --text-color: #211d1d;
+  --title-color: #211d1d;
 
-  --button-text: #FFFFFF;
-  --button-bg: #0D9488;
-  --button-bg-hover: #0F766E;
+  --button-text: #211d1d;
+  --button-bg: #e0f765;
+  --button-bg-hover: #d0e55d;
 
-  --input-bg: #1c1917;
+  --input-bg: #211d1d;
+  --border-color: #211d1d;
 }
 
 body.dark-mode {
-  --bg-color: #0C0F17;
-  --main-bg: #2A3340;
-  --cards-bg: #3B4554;
-  --sidebar-bg: #0C0F17;
+  --bg-color: #111111;
+  --main-bg: #d1d1d1;
+  --cards-bg: #1a1a1a;
+  --sidebar-bg: #757575;
 
-  --text-color: #D9DBDF;
-  --title-color: #F5F5F7;
+  --text-color: #f5f5f5;
+  --title-color: #1d1d1d;
 
-  --button-bg: #3B82F6;
-  --button-bg-hover: #2563EB;
-  --button-text: #FFFFFF;
+  --button-text: #0a0a0a;
+  --button-bg: #ffffff;
+  --button-bg-hover: #e8e8e8;
 
-  --input-bg: #1E293B;
+  --input-bg: #757575;
+  --border-color: rgb(241, 241, 241, 0);
 }
 
 
@@ -121,7 +123,7 @@ button:focus-visible {
 
 input {
   background: var(--input-bg);
-  padding: 8px;
+  padding: 16px;
   border-radius: 8px;
   outline: none;
   font-size: 22px;

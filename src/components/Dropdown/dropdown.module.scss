@@ -8,14 +8,34 @@
   align-items: center;
   cursor: pointer;
   outline: none;
+  background-color: #211d1d;
+  border: 2px solid var(--border-color);
+  color: #fff;
 }
 
 .dropdown__trigger:hover {
-  background-color: #3e3e3e;
+  background-color: #fcfcfc;
+  color: var(--button-text);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  transition: color 0.2s ease;
+}
+
+.dropdown__trigger:hover .icon {
+  color: var(--button-text);
+}
+
+.dropdown__trigger:focus .icon {
+  color: rgb(255, 255, 255);
 }
 
 .dropdown__trigger:focus {
-  background-color: #3e3e3e;
+  background-color: #211d1d;
+  color: #fff;
   outline: none;
 }
 

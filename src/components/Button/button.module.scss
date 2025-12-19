@@ -6,21 +6,22 @@
   -webkit-backdrop-filter: blur(1px);
   transition: all 0.2s ease;
   color: var(--button-text);
-  border: none;
+  border: 2px solid var(--border-color);
   border-radius: 16px;
   cursor: pointer;
   outline: none;
 
   &:hover {
     background: var(--button-bg-hover);
-    color: #ffffff;
+    color: #211d1d;
+    border: 2px solid var(--border-color);
   }
 
   &:focus,
   &:active {
     outline: none;
     background: var(--button-bg-hover);
-    color: #ffffff;
+    color: #211d1d;
   }
 
 }
