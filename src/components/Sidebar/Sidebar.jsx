@@ -9,7 +9,7 @@ export const Sidebar = () => {
         <ul className={styles.list}>
 
           <Dropdown title='Generators'>
-            <li><NavLink to='/generators/uuid-generator' className={({ isActive }) => isActive ? styles.active : styles.default}>UUIDGenerator</NavLink></li>
+            <li><NavLink to='/generators/uuid-generator' className={({ isActive }) => isActive ? styles.active : styles.default}>UUID Generator</NavLink></li>
             <li><NavLink to='/generators/fake-address-generator' className={({ isActive }) => isActive ? styles.active : styles.default}>Fake Address Generator</NavLink></li>
             <li><NavLink to='/generators/password-generator' className={({ isActive }) => isActive ? styles.active : styles.default}>Password Generator</NavLink></li>
             <li><NavLink to='/generators/username-generator' className={({ isActive }) => isActive ? styles.active : styles.default}>Username Generator</NavLink></li>

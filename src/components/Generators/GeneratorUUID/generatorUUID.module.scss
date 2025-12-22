@@ -1,16 +1,21 @@
- .uuid {
-   font-family: monospace;
-   word-break: break-all;
-   font-size: 22px;
- }
+  .wrapper {
+    display: flex;
+    gap: 32px;
+  }
 
- .buttonsGroup {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   gap: 24px;
- }
+  .uuid {
+    font-family: monospace;
+    word-break: break-all;
+    font-size: 22px;
+  }
 
- .iconButton {
-   max-width: 120px;
- }
+  .buttonsGroup {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .iconButton {
+    max-width: 120px;
+  }

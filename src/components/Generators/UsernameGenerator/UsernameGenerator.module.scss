@@ -1,20 +1,25 @@
-.checkboxRow {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+ .wrapper {
+   display: flex;
+   gap: 32px;
+ }
 
-.buttonsGroup {
-  display: flex;
-  gap: 24px;
-  width: 100%;
-}
+ .checkboxRow {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+ }
 
-.userName {
-  color: rgb(153, 255, 0);
-  font-size: 24px;
-}
+ .buttonsGroup {
+   display: flex;
+   gap: 24px;
+   width: 100%;
+ }
 
-.iconButton {
-  max-width: 120px;
-}
+ .userName {
+   color: rgb(153, 255, 0);
+   font-size: 24px;
+ }
+
+ .iconButton {
+   max-width: 120px;
+ }

@@ -1,3 +1,8 @@
+ .wrapper {
+   display: flex;
+   gap: 32px;
+ }
+
  .items {
    display: flex;
    flex-direction: row;

@@ -1,6 +1,11 @@
- .buttonsGroup {
-   width: 100%;
-   display: flex;
-   justify-content: space-between;
-   gap: 24px;
- }
+.wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.buttonsGroup {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}

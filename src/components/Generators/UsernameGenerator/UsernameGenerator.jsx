@@ -4,6 +4,7 @@ import { Button } from "../../Button/Button";
 import { Card } from '../../Card/Card';
 import copyIcon from "../../../assets/icons/copy-icon.svg";
 import { Checkbox } from '../../Checkbox/Checkbox';
+import { Description } from '../../Description/Description';
 
 const adjectives = [
   "Swift", "Silent", "Electric", "Neon", "Cosmic", "Shadow", "Funky", "Lucky", "Rapid", "Pixel",
@@ -33,25 +34,28 @@ export const UsernameGenerator = () => {
   const copy = () => navigator.clipboard.writeText(username);
 
   return (
-    <Card className={styles.wrappper}>
-      <h2>Username Generator</h2>
-      <label className={styles.checkboxRow}>
-        <Checkbox type="checkbox"
-          checked={!noNumbers}
-          onChange={() => setNoNumbers(!noNumbers)} />
-        Numbers
-      </label>
-      <input type="text" readOnly value={username} />
+    <div className={styles.wrapper}>
+      <Card className={styles.wrappper}>
+        <h2>Username Generator</h2>
+        <label className={styles.checkboxRow}>
+          <Checkbox type="checkbox"
+            checked={!noNumbers}
+            onChange={() => setNoNumbers(!noNumbers)} />
+          Numbers
+        </label>
+        <input type="text" readOnly value={username} />
 
-      <div className={styles.buttonsGroup}>
-        <Button onClick={generate}>Generate Username</Button>
-        <Button
-          className={styles.iconButton}
-          onClick={copy}>
-          <img src={copyIcon} width={20} height={20} alt="copy" />
-        </Button>
-      </div>
-    </Card>
+        <div className={styles.buttonsGroup}>
+          <Button onClick={generate}>Generate Username</Button>
+          <Button
+            className={styles.iconButton}
+            onClick={copy}>
+            <img src={copyIcon} width={20} height={20} alt="copy" />
+          </Button>
+        </div>
+      </Card>
+      <Description>The Username Generator helps you quickly create unique and readable usernames for applications, games, websites, and testing environments. It combines words, numbers, and patterns to generate usernames that look natural and realistic. This tool is especially useful when you need placeholder accounts, demo data, or test users without manually inventing names every time.</Description>
+    </div>
   );
 };
 
