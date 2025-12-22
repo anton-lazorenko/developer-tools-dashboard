@@ -2,9 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "./Layout/Layout";
 
-
-
-
 const UUIDGeneratorPage = lazy(() => import('./pages/UUIDGeneratorPage/UUIDGeneratorPage'));
 const FakeAddressGeneratorPage = lazy(() => import('./pages/FakeAddressGeneratorPage/FakeAddressGeneratorPage'));
 const PasswordGeneratorPage = lazy(() => import('./pages/PasswordGeneratorPage/PasswordGeneratorPage'));
@@ -35,13 +32,14 @@ function App() {
               <Route path="url-encoder" element={<EncoderURLPage />} />
             </Route>
 
-
             {/* <Route path="encoders" element={<EncodersPage />} />
               */}
           </Route>
         </Routes>
       </Suspense>
+
     </Router>
+
   );
 }
 

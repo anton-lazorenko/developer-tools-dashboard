@@ -1,14 +1,14 @@
 .checkbox {
   appearance: none;
-  width: 20px;
-  height: 20px; 
+  width: 30px;
+  height: 20px;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
   transition: all 0.2s ease;
 
-   &:checked {
-    background-color: #3b3b3b; 
+  &:checked {
+    background-color: #3b3b3b;
   }
 
   &:checked::after {
@@ -20,6 +20,6 @@
     height: 10px;
     border: solid #fff;
     border-width: 0 2px 2px 0;
-     transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
   }
 }

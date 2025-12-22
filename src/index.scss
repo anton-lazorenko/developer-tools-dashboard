@@ -14,7 +14,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  box-sizing: border-box;
 }
 
 a {
@@ -35,6 +34,7 @@ body {
   font-family: "JetBrains Mono", monospace;
   background: var(--bg-color);
   color: var(--text-color);
+  box-sizing: border-box;
 }
 
 body.light-mode {
@@ -123,13 +123,13 @@ button:focus-visible {
 
 input {
   background: var(--input-bg);
-  padding: 16px;
-  border-radius: 8px;
+  padding: 16px 0 16px 16px;
+  border-radius: 16px;
   outline: none;
   font-size: 22px;
   box-shadow: none;
   border: none;
-  width: 90%;
+  align-self: stretch;
 }
 
 textarea {
