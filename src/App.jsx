@@ -12,6 +12,8 @@ const Base64Page = lazy(() => import('./pages/Base64Page/Base64Page'));
 const EncoderHTMLPage = lazy(() => import('./pages/EncoderHTMLPage/EncoderHTMLPage'));
 const EncoderURLPage = lazy(() => import('./pages/EncoderURLPage/EncoderURLPage'));
 
+const PngToWebConverterPage = lazy(() => import('./pages/PngToWebConverterPage/PngToWebConverterPage'));
+
 function App() {
   return (
     <Router>
@@ -30,6 +32,9 @@ function App() {
               <Route path="base-encoder" element={<Base64Page />} />
               <Route path="html-encoder" element={<EncoderHTMLPage />} />
               <Route path="url-encoder" element={<EncoderURLPage />} />
+            </Route>
+            <Route path="converters">
+              <Route path="png-to-web" element={<PngToWebConverterPage />} />
             </Route>
 
             {/* <Route path="encoders" element={<EncodersPage />} />

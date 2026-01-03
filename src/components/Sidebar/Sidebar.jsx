@@ -21,6 +21,9 @@ export const Sidebar = () => {
             <li><NavLink to='/encoders/html-encoder' className={({ isActive }) => isActive ? styles.active : styles.default}>HTML Encoder</NavLink></li>
             <li><NavLink to='/encoders/url-encoder' className={({ isActive }) => isActive ? styles.active : styles.default}>URL Encoder</NavLink></li>
           </Dropdown>
+          <Dropdown title='Converters'>
+            <li><NavLink to='/converters/png-to-web' className={({ isActive }) => isActive ? styles.active : styles.default}>PNG to WEB</NavLink></li>
+          </Dropdown>
         </ul>
       </nav>
     </aside>
